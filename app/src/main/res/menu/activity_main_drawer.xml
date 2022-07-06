@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_registrar"
+            android:icon="@drawable/ic_baseline_directions_car_24"
+            android:title="Registrar posicion" />
+        <item
+            android:id="@+id/nav_retirar"
+            android:icon="@drawable/ic_baseline_directions_car_24"
+            android:title="Retirar auto" />
+        <item
+            android:id="@+id/nav_buscar"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Buscar Espacio" />
+        <item
+            android:id="@+id/nav_editar"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="Editar" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="Información" />
+    </group>
+</menu>
