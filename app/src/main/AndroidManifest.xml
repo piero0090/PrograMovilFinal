@@ -14,9 +14,13 @@
         android:theme="@style/Theme.PrograMovilFinal"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".RegistroActivity"
             android:theme="@style/Theme.PrograMovilFinal22"
-            android:exported="true">
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.PrograMovilFinal22">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,9 +31,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.PrograMovilFinal.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.PrograMovilFinal.NoActionBar"></activity>
     </application>
 
 </manifest>
