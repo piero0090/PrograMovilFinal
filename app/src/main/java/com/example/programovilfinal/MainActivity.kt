@@ -1,5 +1,6 @@
 package com.example.programovilfinal
 
+import android.app.Dialog
 import android.content.ClipData
 import android.os.Bundle
 import android.view.Menu
@@ -40,11 +41,12 @@ class MainActivity : AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_editar, R.id.nav_retirar, R.id.nav_buscar,R.id.nav_registrar, R.id.nav_info
+                R.id.nav_editar, R.id.nav_retirar, R.id.nav_buscar,R.id.nav_registrar, R.id.nav_info, R.id.nav_emergencia
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

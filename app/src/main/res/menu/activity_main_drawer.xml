@@ -26,7 +26,7 @@
             android:icon="@drawable/ic_baseline_info_24"
             android:title="Información" />
         <item
-            android:id="@+id/btnMenu"
+            android:id="@+id/nav_emergencia"
             android:icon="@drawable/ic_baseline_local_phone_24"
             android:title="Emergencia"
             android:actionLayout="@layout/activity_button_menu"
