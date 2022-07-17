@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "702536123066",
+    "project_id": "pmfinal-c38e7",
+    "storage_bucket": "pmfinal-c38e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702536123066:android:0b69fa081eaddeb0fe7883",
+        "android_client_info": {
+          "package_name": "com.example.programovilfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702536123066-kem3ob38iqq77rhils4lorfcb1v5viln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGLNQzVP3sWVdf9dzYAUb6iWJzfxRZMlc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702536123066-kem3ob38iqq77rhils4lorfcb1v5viln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

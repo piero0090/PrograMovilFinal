@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.fragment.findNavController
+import com.example.programovilfinal.GestUsers
 import com.example.programovilfinal.R
 
 class EditarFragment : Fragment() {
@@ -15,6 +18,13 @@ class EditarFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_editar, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val btnUpdate= view.findViewById<Button>(R.id.btnSaveEdit)
+        btnUpdate.setOnClickListener {
+            GestUsers.getInstance().ActualizarUsers("HOLAAA","UNOOO",7845212)
+        }
     }
 
 }
