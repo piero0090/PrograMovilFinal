@@ -44,12 +44,13 @@ class RegistroposFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         btnScan = view.findViewById(R.id.btnScanner)
-        btnScan.setOnClickListener{InnitScanner()}
+        btnScan.setOnClickListener{innitScanner()}
         txtRegistroPos = view.findViewById(R.id.txtID_Posicion)
     }
 
-    private fun InnitScanner(){
+    private fun innitScanner(){
         qrScanIntegrator = IntentIntegrator.forSupportFragment(this)
+        qrScanIntegrator.setPrompt("Escanea el código QR para Registrar tu Posición - PARKUL")
         qrScanIntegrator.initiateScan()
     }
 
@@ -57,10 +58,10 @@ class RegistroposFragment : Fragment() {
         val result = IntentIntegrator.parseActivityResult(requestCode,resultCode,data)
         if(result!=null){
             if(result.contents == null){
-                Toast.makeText(activity, "pruebita", Toast.LENGTH_LONG).show()
+                Toast.makeText(activity, "OPERACIÓN CANCELADA", Toast.LENGTH_LONG).show()
             }else{
-                Toast.makeText(activity, "POSICIÓN REGISTRADA", Toast.LENGTH_LONG).show()
                 txtRegistroPos.text = result.contents
+                Toast.makeText(activity, "POSICIÓN REGISTRADA", Toast.LENGTH_LONG).show()
             }
         }else{
             super.onActivityResult(requestCode, resultCode, data)
