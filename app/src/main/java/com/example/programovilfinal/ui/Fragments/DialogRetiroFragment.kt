@@ -8,7 +8,7 @@ import androidx.fragment.app.DialogFragment
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-class DialogRetiroFragmento : DialogFragment() {
+class DialogRetiroFragment : DialogFragment() {
     val db= Firebase.firestore
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog =
         AlertDialog.Builder(requireContext())

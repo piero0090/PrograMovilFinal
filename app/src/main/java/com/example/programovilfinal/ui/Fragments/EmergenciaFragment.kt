@@ -1,13 +1,10 @@
 package com.example.programovilfinal.ui.Fragments
 
-import android.app.AlertDialog
-import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.example.programovilfinal.R
 
@@ -31,8 +28,8 @@ class EmergenciaFragment() : Fragment() {
     }
 
     private fun MostrarDialogo(){
-        DialogEmergenciaFragmento().show(
-            childFragmentManager, DialogEmergenciaFragmento.TAG)
+        DialogEmergenciaFragment().show(
+            childFragmentManager, DialogEmergenciaFragment.TAG)
     }
 
 

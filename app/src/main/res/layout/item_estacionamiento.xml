@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/ivEstacionamiento"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        tools:background="@color/black"
-        app:layout_constraintTop_toTopOf="parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        />
-    <TextView
-        android:id="@+id/tvEstacionamientoLado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="R"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivEstacionamiento"
-        />
-    <TextView
-        android:id="@+id/tvEstacionamientoNivel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="1"
-        app:layout_constraintTop_toBottomOf="@+id/tvEstacionamientoLado"
-        app:layout_constraintStart_toEndOf="@+id/ivEstacionamiento"
-        />
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/tviPisos"
+            android:layout_width="150dp"
+            android:layout_height="51dp"
+            android:layout_marginEnd="40dp"
+            android:background="@color/ulima"
+            android:text=""
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/tviPosicion"
+            android:layout_width="150dp"
+            android:layout_height="51dp"
+            android:background="#706B6B"
+            android:backgroundTint="@null"
+            android:text="" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

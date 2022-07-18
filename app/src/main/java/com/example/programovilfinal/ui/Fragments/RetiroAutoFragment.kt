@@ -36,8 +36,8 @@ class RetiroAutoFragment : Fragment() {
     }
 
     private fun MostrarDialogo(){
-        DialogRetiroFragmento().show(
-            childFragmentManager, DialogRetiroFragmento.TAG)
+        DialogRetiroFragment().show(
+            childFragmentManager, DialogRetiroFragment.TAG)
     }
 
 }
