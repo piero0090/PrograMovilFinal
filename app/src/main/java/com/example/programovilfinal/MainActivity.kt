@@ -56,8 +56,8 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
     fun initRecyclerView(){
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerEstacionamiento)
-        recyclerView.layoutManager = LinearLayoutManager (this)
-        recyclerView.adapter = EstacionamientoAdapter(EstacionamientoProvider.estacionamientoList)
+       // val recyclerView = findViewById<RecyclerView>(R.id.recyclerEstacionamiento)
+        //recyclerView.layoutManager = LinearLayoutManager (this)
+        //recyclerView.adapter = EstacionamientoAdapter(EstacionamientoProvider.estacionamientoList)
     }
 }
