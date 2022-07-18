@@ -45,8 +45,7 @@ class GestUsers {
    }
 
     fun ActualizarUsers (newpass: String, newmatricula: String, newphone: Number){
-
-        db.collection("Usuarios").document("7uIvl6J6Uezj99uCty2N").update(
+        db.collection("Usuarios").document("kcRHbcqxQko5MGiktw5i").update(
             "contrass",newpass,
             "matricula",newmatricula,
             "numcelular",newphone

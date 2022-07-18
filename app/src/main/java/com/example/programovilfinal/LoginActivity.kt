@@ -18,6 +18,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        val b: Bundle
         val btniniciosesion = findViewById<Button>(R.id.btnInicioSesion)
         val txtvRegistro = findViewById<TextView>(R.id.tvRegistrate)
         edtUser= findViewById(R.id.edtUserCod)
@@ -31,6 +32,7 @@ class LoginActivity : AppCompatActivity() {
                     //Log.i("GAA","NOOOOOOOOOOOOOOOO")
                 }else{
                     val intent = Intent(this,MainActivity::class.java)
+                   // intent.putExtra("Usercod", edtUser.text.toString())//*************************
                     startActivity(intent)
                     //Log.i("asa","SUCCCESSSSS")
                 }

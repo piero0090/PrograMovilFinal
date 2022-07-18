@@ -7,8 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.programovilfinal.R
 
-//import com.example.programovilfinal.ui.gallery.GalleryViewModel
-
 class InfoFragment : Fragment() {
 /*
     private var _binding: FragmentGalleryBinding? =null
