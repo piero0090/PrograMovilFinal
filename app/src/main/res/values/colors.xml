@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="ulima">#FF6D1C</color>
+    <color name="emergencia">#FFF6F6</color>
 </resources>

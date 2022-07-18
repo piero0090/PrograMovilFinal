@@ -1,5 +1,6 @@
 package com.example.programovilfinal
 
+import android.app.Dialog
 import android.content.ClipData
 import android.os.Bundle
 import android.view.Menu
@@ -15,16 +16,18 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.programovilfinal.adapter.EstacionamientoAdapter
 import com.example.programovilfinal.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        EstacionamientoProvider.estacionamientoList
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.appBarMain.toolbar)
@@ -40,15 +43,21 @@ class MainActivity : AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_editar, R.id.nav_retirar, R.id.nav_buscar,R.id.nav_registrar, R.id.nav_info
+                R.id.nav_editar, R.id.nav_retirar, R.id.nav_buscar,R.id.nav_registrar, R.id.nav_info, R.id.nav_emergencia
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+    fun initRecyclerView(){
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerEstacionamiento)
+        recyclerView.layoutManager = LinearLayoutManager (this)
+        recyclerView.adapter = EstacionamientoAdapter(EstacionamientoProvider.estacionamientoList)
     }
 }

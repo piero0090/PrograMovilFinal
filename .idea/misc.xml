@@ -3,14 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/drawable/button_bg.xml" value="0.2125" />
+        <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/drawable/button_cancel.xml" value="0.2125" />
+        <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/drawable/button_emergencia.xml" value="0.2125" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/activity_button_menu.xml" value="0.22146739130434784" />
+        <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/activity_main.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/activity_registro.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/app_bar_main.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/content_button_login.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/content_main.xml" value="0.22146739130434784" />
+        <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/dialog_emergencia.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/fragment_buscar_espacio.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/fragment_editar.xml" value="0.22146739130434784" />
+        <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/fragment_emergencia.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/fragment_first.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/fragment_info.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/fragment_registropos.xml" value="0.264" />
@@ -18,6 +24,18 @@
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/fragment_second.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/layout/nav_header_main.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/menu/activity_main_drawer.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/CLAUDIA/Documents/GitHub/PrograMovilFinal/app/src/main/res/menu/main.xml" value="0.25" />
+        <entry key="..\:/Users/DELL/Desktop/UNIV/IX/PrograMovil/PrograMovilFinal/app/src/main/res/layout/activity_button_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/Desktop/UNIV/IX/PrograMovil/PrograMovilFinal/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/Desktop/UNIV/IX/PrograMovil/PrograMovilFinal/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/Desktop/UNIV/IX/PrograMovil/PrograMovilFinal/app/src/main/res/layout/activity_registro.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/Desktop/UNIV/IX/PrograMovil/PrograMovilFinal/app/src/main/res/layout/app_bar_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/Desktop/UNIV/IX/PrograMovil/PrograMovilFinal/app/src/main/res/layout/content_button_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/Desktop/UNIV/IX/PrograMovil/PrograMovilFinal/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/Desktop/UNIV/IX/PrograMovil/PrograMovilFinal/app/src/main/res/layout/fragment_buscar_espacio.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/Desktop/UNIV/IX/PrograMovil/PrograMovilFinal/app/src/main/res/layout/fragment_editar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/Desktop/UNIV/IX/PrograMovil/PrograMovilFinal/app/src/main/res/layout/fragment_first.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/DELL/Desktop/UNIV/IX/PrograMovil/PrograMovilFinal/app/src/main/res/layout/item_estacionamiento.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/JCfor/Desktop/PrograMovilFinal/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2425" />
         <entry key="..\:/Users/JCfor/Desktop/PrograMovilFinal/app/src/main/res/drawable/button_bg.xml" value="0.127" />
         <entry key="..\:/Users/JCfor/Desktop/PrograMovilFinal/app/src/main/res/drawable/edit_text.xml" value="0.2155" />
