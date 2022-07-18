@@ -11,27 +11,19 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.programovilfinal.R
 import com.example.programovilfinal.databinding.ActivityMainBinding
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.google.zxing.integration.android.IntentIntegrator
 import org.json.JSONObject
 import org.w3c.dom.Text
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [RegistroposFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class RegistroposFragment : Fragment() {
+    val db= Firebase.firestore
 
     //private lateinit var binding: ActivityMainBinding
     private lateinit var btnScan : Button
     private lateinit var txtRegistroPos : TextView
     private lateinit var qrScanIntegrator: IntentIntegrator
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,7 +36,9 @@ class RegistroposFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         btnScan = view.findViewById(R.id.btnScanner)
-        btnScan.setOnClickListener{innitScanner()}
+        btnScan.setOnClickListener{
+            innitScanner()
+        }
         txtRegistroPos = view.findViewById(R.id.txtID_Posicion)
     }
 
@@ -61,30 +55,13 @@ class RegistroposFragment : Fragment() {
                 Toast.makeText(activity, "OPERACIÓN CANCELADA", Toast.LENGTH_LONG).show()
             }else{
                 txtRegistroPos.text = result.contents
+                db.collection("Estacionamientos").
+                document(txtRegistroPos.text.toString()).update("Estado",false)
                 Toast.makeText(activity, "POSICIÓN REGISTRADA", Toast.LENGTH_LONG).show()
             }
         }else{
             super.onActivityResult(requestCode, resultCode, data)
         }
     }
-    /*
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment RegistroposFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            RegistroposFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }*/
+
 }
