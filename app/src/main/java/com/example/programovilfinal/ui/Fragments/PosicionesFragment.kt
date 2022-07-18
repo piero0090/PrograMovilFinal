@@ -43,12 +43,14 @@ class PosicionesFragment : Fragment() {
             Constantes.NOMBRE_SP, Context.MODE_PRIVATE
         )
 
-        val piso = "1"
+        val pisoUno = "1"
+       // val pisoDos = "2"
+       // val pisoTres = "3"
         //val txtSinData = view.findViewById<TextView>(R.id.txtSinData)
 
         var lista: List<Posiciones> = mutableListOf()
         lista = gestor.obtenerListaPosicionesRoom(
-            requireContext().applicationContext, piso
+            requireContext().applicationContext, pisoUno
         )
 
         if (lista.isNotEmpty()) {

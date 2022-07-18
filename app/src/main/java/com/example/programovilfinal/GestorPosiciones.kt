@@ -11,7 +11,7 @@ class GestorPosiciones {
 
         val daoPosiciones: PosicionRoomDAO = AppDatabase.getInstance(context).getPosicionesDao()
 
-        val listaPosicionesRoom= daoPosiciones.getallPosiciones()
+        val listaPosicionesRoom= daoPosiciones.getPosicion(piso)
 
         println(listaPosicionesRoom.size)
 

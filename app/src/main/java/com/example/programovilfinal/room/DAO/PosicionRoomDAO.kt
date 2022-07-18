@@ -10,8 +10,8 @@ interface PosicionRoomDAO {
     @Query("SELECT * FROM PosicionRoom")
     fun getallPosiciones() :List<PosicionRoom>
 
-    //@Query("SELECT * FROM PosicionRoom where piso=: piso1" )
-    //fun getDepartmentos(fecha: String) :List<PersonaRoom>
+    @Query("SELECT * FROM PosicionRoom where piso=:pisoUno" )
+    fun getPosicion(pisoUno : String) :List<PosicionRoom>
 
     @Insert
     fun insertPosiciones(posicion: PosicionRoom)
