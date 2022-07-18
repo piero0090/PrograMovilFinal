@@ -3,7 +3,10 @@ package com.example.programovilfinal
 import android.content.Intent
 import android.os.Bundle
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 36550661763086f540a7693a66d3c3285146e256
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
