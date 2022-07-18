@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
                     //Log.i("GAA","NOOOOOOOOOOOOOOOO")
                 }else{
                     val intent = Intent(this,MainActivity::class.java)
-                   // intent.putExtra("Usercod", edtUser.text.toString())//*************************
+                    intent.putExtra("Usercod", edtUser.text.toString())//*************************
                     startActivity(intent)
                     //Log.i("asa","SUCCCESSSSS")
                 }

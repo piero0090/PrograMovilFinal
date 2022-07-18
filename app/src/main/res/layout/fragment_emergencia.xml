@@ -8,8 +8,14 @@
 
     <Button
         android:id="@+id/btnDialogo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#FFDC60"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
         android:text="Llamar a Emergencias"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

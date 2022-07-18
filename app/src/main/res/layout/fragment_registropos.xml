@@ -13,11 +13,14 @@
 
         <Button
             android:id="@+id/btnScanner"
-            style="@style/Widget.AppCompat.Button.Small"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="#0073A8"
-            android:backgroundTint="#FFFFFF"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#FFDC60"
+            android:textColor="#040404"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
             android:text="Registrar Auto"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -26,13 +29,20 @@
 
         <TextView
             android:id="@+id/txtID_Posicion"
+            android:visibility="invisible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
+            android:textColor="#0C0C0C"
+            android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnScanner" />
+            app:layout_constraintTop_toBottomOf="@+id/btnScanner"
+            app:layout_constraintVertical_bias="0.32" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
